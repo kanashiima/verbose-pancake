@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>John Web Dev 2021</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    
+  </head>
+  <body>
+      
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+      <div id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="../index.html">Home</a>
+          <a class="nav-item nav-link" href="oldUncoolDesign.html">Very Old & Uncool Design</a>
+          <a class="nav-item nav-link" href="#">Hip & Hop Updated Design Example</a>
+          <a class="nav-item nav-link" href=" place" target="_blank">See the Code</a>
+        
+        </div>
+      </div>
+    </nav>
+
+    </div>
+    <div id="allContent">
+      <div class="container-fluid" align="center">
+        <div class="card2">
+      <div class="info">
+        <br>
+        <p>The timer I would like to make would let the user just key in the amount of time they want themselves. This might be going backward from the current form but I personally prefer the control over what we have now. But I would also like to add quick buttons that will act as defaults for the timer. So click the 5 minutes button and the timer will start at 5 minutes.<br/><br/>
+      </div>
+      <div id="showcase">
+
+
+        <div class="timer-display">
+
+          <p id="timer"></p>
+        </div>
+        
+          <div class="main">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="hours">Hours</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="minutes">Minutes</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="seconds">Seconds</label>&nbsp;
+        
+            <br>
+            <br>
+            <!-- Below works how I wanted it too, but i dont know how to get rid of the arrows key controls on the page though. I mostly just wanted the user to input the amount but i guess having both is fine -->
+          <input
+            type="number"
+            id="hours"
+            placeholder="hours"
+            style="width: 100px;"
+            data-component="hours"
+          />
+        
+          <input
+            type="number"
+            id="minutes"
+            placeholder="minutes"
+            style="width: 100px;"
+            data-component="minutes"
+          />
+        
+          <input
+            type="number"
+            id="seconds"
+            placeholder="seconds"
+            style="width: 100px;"
+            max="60"
+            data-component="seconds"
+          />
+            <!-- Buttons with preset times -->
+            <br><br>
+            <button class="addFive" id="addFive">5 Mins</button>
+            <button class="addTen" id="addTen">10 Mins</button>
+            <button class="addThirty" id="addThirty">30 Mins</button>
+            
+            <br><br>
+            <!-- Buttons to start and stop -->
+            <button class="start-timer" id="startTimer">Start</button>
+            <button class="stop-timer" id="stopTimer">Pause</button>
+        
+        
+          </div>
+          
+
+
+
+
+
+
+      </div>
+      <div id="console-box"> 
+      </div> 
+      <br>
+      <br>
+    
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script  src="../js/index.js"></script>
+    
+  </body>
+</html>
